@@ -7,6 +7,7 @@
 
 - 0th chapter. done on Mar. 25, 2013.
 - 1st chapter. done on Mar. 25, 2013.
+- 2nd chapter. done on Mar. 25, 2013.
 
 ## Link
 
