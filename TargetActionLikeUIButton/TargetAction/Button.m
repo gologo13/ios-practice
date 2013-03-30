@@ -36,7 +36,7 @@
     ta->target = target;
     ta->action = action;
     NSString *key = [NSString stringWithFormat:@"%d", event];
-    [targetAndActionDic setObject:target forKey:key];
+    [targetAndActionDic setObject:ta forKey:key];
 }
 
 - (void)sendAction:(int)event
