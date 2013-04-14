@@ -15,6 +15,7 @@
 -  7th chapter. done on Mar. 31, 2013.
 -  8th chapter. done on Apr. 09, 2013.
 -  9th chapter. done on Apr. 10, 2013.
+- 10th chapter. done on Apr. 14, 2013.
 
 - 16th chapter. done on Mar. 31, 2013.
 
