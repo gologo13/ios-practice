@@ -18,6 +18,7 @@
 - 10th chapter. done on Apr. 14, 2013.
 - 11th chapter. done on Apr. 14, 2013.
 - 12th chapter. done on Apr. 15, 2013.
+- 13th chapter. done on Apr. 15, 2013.
 
 - 16th chapter. done on Mar. 31, 2013.
 
