@@ -24,9 +24,9 @@
     r.size.height = 44 * 7;
     
     Pallet *pallet = [[Pallet alloc] initWithFrame:r];
-    [pallet setTarget:self action:@selector(palletActionStart:)        forEvent:PalletEventTouched];
-    [pallet setTarget:self action:@selector(palletActionValueChanged:) forEvent:PalletEventValueChanged];
-    [pallet setTarget:self action:@selector(palletActionEnd:)          forEvent:PalletEventReleased];
+    [pallet setTarget:self action:@selector(palletActionStart:)        forEvent:PalletEvent_Touched];
+    [pallet setTarget:self action:@selector(palletActionValueChanged:) forEvent:PalletEvent_ValueChanged];
+    [pallet setTarget:self action:@selector(palletActionEnd:)          forEvent:PalletEvent_Released];
     [self.window addSubview:pallet];
     
     [self.window makeKeyAndVisible];

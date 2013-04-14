@@ -32,24 +32,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Pallet/Pallet.m"
-         timestampString = "387129558.84666"
+         timestampString = "387650949.492633"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "63"
-         endingLineNumber = "63"
-         landmarkName = "-touchesBegan:withEvent:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "Pallet/Pallet.m"
-         timestampString = "387129558.84666"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "42"
-         endingLineNumber = "42"
+         startingLineNumber = "57"
+         endingLineNumber = "57"
          landmarkName = "-select:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -58,11 +45,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Pallet/Pallet.m"
-         timestampString = "387129558.84666"
+         timestampString = "387650949.492633"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "37"
-         endingLineNumber = "37"
+         startingLineNumber = "36"
+         endingLineNumber = "36"
          landmarkName = "-sendAction:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -71,25 +58,12 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Pallet/TargetActionHandler.m"
-         timestampString = "386352442.156457"
+         timestampString = "387650949.492633"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "40"
-         endingLineNumber = "40"
-         landmarkName = "-sendAction:sender:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "Pallet/TargetActionHandler.m"
-         timestampString = "386353330.050898"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "44"
-         endingLineNumber = "44"
-         landmarkName = "-sendAction:sender:"
+         startingLineNumber = "38"
+         endingLineNumber = "38"
+         landmarkName = "-setTarget:action:forEvent:"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>
