@@ -1,9 +1,11 @@
-35 Tips and Points in the iPhone Applications Development
+ios-practice
 ============
 
-<img align="right" src="http://www.shuwasystem.co.jp/products/7980img/3323/a.jpg"></img>
-
 ## Progress
+
+### Book: 35 Tips and Points in the iPhone Applications Development
+
+<img align="right" src="http://www.shuwasystem.co.jp/products/7980img/3323/a.jpg"></img>
 
 -  0th chapter. done on Mar. 25, 2013.
 -  1st chapter. done on Mar. 25, 2013.
@@ -24,6 +26,12 @@
 
 - 19th chapter. done on Apr. 02, 2013.
 - 20th chapter. done on Apr. 03, 2013.
+
+### Web Tutorial
+
+[iPhoneアプリを作ってみよう：目次エントリー - もとまか日記](http://d.hatena.ne.jp/moto_maka/20081118/1226953067)
+
+- [Janken](./Janken)
 
 ## Link
 
