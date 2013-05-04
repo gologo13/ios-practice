@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		47178AD81734AEB900B1E950 /* paper.png in Resources */ = {isa = PBXBuildFile; fileRef = 47178AD71734AEB900B1E950 /* paper.png */; };
+		47178ADA1734AEC500B1E950 /* scissor.png in Resources */ = {isa = PBXBuildFile; fileRef = 47178AD91734AEC500B1E950 /* scissor.png */; };
+		47178ADC1734AECE00B1E950 /* rock.png in Resources */ = {isa = PBXBuildFile; fileRef = 47178ADB1734AECE00B1E950 /* rock.png */; };
 		474D9B9A17339EEF0091872C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 474D9B9917339EEF0091872C /* UIKit.framework */; };
 		474D9B9C17339EEF0091872C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 474D9B9B17339EEF0091872C /* Foundation.framework */; };
 		474D9B9E17339EEF0091872C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 474D9B9D17339EEF0091872C /* CoreGraphics.framework */; };
@@ -21,6 +24,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		47178AD71734AEB900B1E950 /* paper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paper.png; sourceTree = "<group>"; };
+		47178AD91734AEC500B1E950 /* scissor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scissor.png; sourceTree = "<group>"; };
+		47178ADB1734AECE00B1E950 /* rock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rock.png; sourceTree = "<group>"; };
 		474D9B9617339EEF0091872C /* Janken.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Janken.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		474D9B9917339EEF0091872C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		474D9B9B17339EEF0091872C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -96,6 +102,9 @@
 		474D9BA017339EEF0091872C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				47178ADB1734AECE00B1E950 /* rock.png */,
+				47178AD71734AEB900B1E950 /* paper.png */,
+				47178AD91734AEC500B1E950 /* scissor.png */,
 				474D9BA117339EEF0091872C /* Janken-Info.plist */,
 				474D9BA217339EEF0091872C /* InfoPlist.strings */,
 				474D9BA517339EEF0091872C /* main.m */,
@@ -164,6 +173,9 @@
 				474D9BAE17339EEF0091872C /* Default@2x.png in Resources */,
 				474D9BB017339EEF0091872C /* Default-568h@2x.png in Resources */,
 				474D9BB617339EEF0091872C /* StudyViewController.xib in Resources */,
+				47178AD81734AEB900B1E950 /* paper.png in Resources */,
+				47178ADA1734AEC500B1E950 /* scissor.png in Resources */,
+				47178ADC1734AECE00B1E950 /* rock.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +311,7 @@
 				474D9BBB17339EEF0091872C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

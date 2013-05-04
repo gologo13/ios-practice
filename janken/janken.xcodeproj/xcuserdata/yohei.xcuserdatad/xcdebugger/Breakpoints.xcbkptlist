@@ -21,11 +21,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Janken/StudyViewController.m"
-         timestampString = "389325898.02773"
+         timestampString = "389331813.758748"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "69"
-         endingLineNumber = "69"
+         startingLineNumber = "79"
+         endingLineNumber = "79"
          landmarkName = "-calculateResultType:withOpponentHand:"
          landmarkType = "5">
       </FileBreakpoint>

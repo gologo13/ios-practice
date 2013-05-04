@@ -25,11 +25,21 @@ typedef enum ResultTypes : NSUInteger {
 NSString *HandNames[3] = {@"Rock", @"Scissor", @"Paper"};
 NSString *ResultNames[3] = {@"You Win!", @"You Lose...", @"Even! Play again!"};
 
+static UIImage *rockImage;
+static UIImage *scissorImage;
+static UIImage *paperImage;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.label_opponent.text = @"";
-    self.label_result.text   = @"";
+    //self.label_opponent.text = @"";
+    
+    self.label_result.text = @"";
+    self.label_result.font = [UIFont boldSystemFontOfSize:30];
+    self.label_result.textColor = [[UIColor alloc] initWithRed:0.0 green:0.0 blue:0.0 alpha:1.0];
+    rockImage    = [UIImage imageNamed:@"rock.png"];
+    scissorImage = [UIImage imageNamed:@"scissor.png"];
+    paperImage   = [UIImage imageNamed:@"paper.png"];
 }
 
 - (void)didReceiveMemoryWarning
@@ -120,15 +130,28 @@ NSString *ResultNames[3] = {@"You Win!", @"You Lose...", @"Even! Play again!"};
     }
 }
 
+- (void)showResult:(ResultTypes)result
+{
+    self.label_result.text = ResultNames[result];
+    if (result == kResultWin) {
+        self.label_result.textColor = [[UIColor alloc] initWithRed:0.0 green:0.0 blue:1.0 alpha:1.0];
+    } else if (result == kResultLose) {
+        self.label_result.textColor = [[UIColor alloc] initWithRed:1.0 green:0.0 blue:0.0 alpha:1.0];
+    } else {
+        self.label_result.textColor = [[UIColor alloc] initWithRed:0.0 green:0.0 blue:0.0 alpha:1.0];
+    }
+}
+
 - (void)battle:(HandTypes)myHand withOpponentHand:(HandTypes)opponentHand
 {
     ResultTypes result = [self calculateResultType:myHand withOpponentHand:opponentHand];
-    self.label_result.text = ResultNames[result];
+    [self showResult:result];
     if (result == kResultEven) {
         [self setHiddenTypeOfOtherButtons:myHand withValue:NO];
         self.button_play.hidden = YES;
     } else {
         self.button_paper.enabled = NO;
+        self.button_play.hidden = NO;
     }
 }
 
@@ -153,7 +176,8 @@ NSString *ResultNames[3] = {@"You Win!", @"You Lose...", @"Even! Play again!"};
     [self setHiddenTypeOfOtherButtons:myHand withValue:YES];
     
     HandTypes opponentHand = [self generateOpponentHand];
-    self.label_opponent.text = HandNames[opponentHand];
+    [self setOpponentHandImage:opponentHand];
+    // self.label_opponent.text = HandNames[opponentHand];
     
     [self battle:myHand withOpponentHand:opponentHand];
 }
@@ -169,8 +193,18 @@ NSString *ResultNames[3] = {@"You Win!", @"You Lose...", @"Even! Play again!"};
     self.button_play.enabled = NO;
     self.label_ready.text = @"ready ...";
     self.label_result.text = @"";
-    self.label_opponent.text = @"";
+    //self.label_opponent.text = @"";
 }
 
+- (void)setOpponentHandImage:(HandTypes)opponentHand
+{
+    if (opponentHand == kHandRock) {
+        self.label_opponent.image = rockImage;
+    } else if (opponentHand == kHandScissor) {
+        self.label_opponent.image = scissorImage;
+    } else {
+        self.label_opponent.image = paperImage;
+    }
+}
 
 @end

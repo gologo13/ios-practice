@@ -16,6 +16,9 @@
 		47876D25171C561000A5788B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 47876D24171C561000A5788B /* Default.png */; };
 		47876D27171C561000A5788B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47876D26171C561000A5788B /* Default@2x.png */; };
 		47876D29171C561000A5788B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47876D28171C561000A5788B /* Default-568h@2x.png */; };
+		47876D31171C564000A5788B /* Pallet.m in Sources */ = {isa = PBXBuildFile; fileRef = 47876D30171C564000A5788B /* Pallet.m */; };
+		47876D35171C566400A5788B /* TargetActionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 47876D34171C566400A5788B /* TargetActionHandler.m */; };
+		47876D37171C568700A5788B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47876D36171C568700A5788B /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,11 @@
 		47876D24171C561000A5788B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		47876D26171C561000A5788B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		47876D28171C561000A5788B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		47876D2F171C564000A5788B /* Pallet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pallet.h; sourceTree = "<group>"; };
+		47876D30171C564000A5788B /* Pallet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pallet.m; sourceTree = "<group>"; };
+		47876D33171C566400A5788B /* TargetActionHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TargetActionHandler.h; sourceTree = "<group>"; };
+		47876D34171C566400A5788B /* TargetActionHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TargetActionHandler.m; sourceTree = "<group>"; };
+		47876D36171C568700A5788B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47876D37171C568700A5788B /* QuartzCore.framework in Frameworks */,
 				47876D13171C561000A5788B /* UIKit.framework in Frameworks */,
 				47876D15171C561000A5788B /* Foundation.framework in Frameworks */,
 				47876D17171C561000A5788B /* CoreGraphics.framework in Frameworks */,
@@ -51,6 +60,7 @@
 		47876D06171C561000A5788B = {
 			isa = PBXGroup;
 			children = (
+				47876D32171C564700A5788B /* Pallet */,
 				47876D18171C561000A5788B /* ExtendablePalletView */,
 				47876D11171C561000A5788B /* Frameworks */,
 				47876D10171C561000A5788B /* Products */,
@@ -68,6 +78,7 @@
 		47876D11171C561000A5788B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				47876D36171C568700A5788B /* QuartzCore.framework */,
 				47876D12171C561000A5788B /* UIKit.framework */,
 				47876D14171C561000A5788B /* Foundation.framework */,
 				47876D16171C561000A5788B /* CoreGraphics.framework */,
@@ -97,6 +108,17 @@
 				47876D28171C561000A5788B /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		47876D32171C564700A5788B /* Pallet */ = {
+			isa = PBXGroup;
+			children = (
+				47876D33171C566400A5788B /* TargetActionHandler.h */,
+				47876D34171C566400A5788B /* TargetActionHandler.m */,
+				47876D2F171C564000A5788B /* Pallet.h */,
+				47876D30171C564000A5788B /* Pallet.m */,
+			);
+			name = Pallet;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,6 +189,8 @@
 			files = (
 				47876D1F171C561000A5788B /* main.m in Sources */,
 				47876D23171C561000A5788B /* StudyAppDelegate.m in Sources */,
+				47876D31171C564000A5788B /* Pallet.m in Sources */,
+				47876D35171C566400A5788B /* TargetActionHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

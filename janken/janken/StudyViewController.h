@@ -10,7 +10,7 @@
 
 @interface StudyViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *label_ready;
-@property (weak, nonatomic) IBOutlet UILabel *label_opponent;
+@property (weak, nonatomic) IBOutlet UIImageView *label_opponent;
 @property (weak, nonatomic) IBOutlet UILabel *label_result;
 @property (weak, nonatomic) IBOutlet UIButton *button_rock;
 @property (weak, nonatomic) IBOutlet UIButton *button_scissor;
