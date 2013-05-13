@@ -27,11 +27,16 @@ ios-practice
 - 19th chapter. done on Apr. 02, 2013.
 - 20th chapter. done on Apr. 03, 2013.
 
-### Web Tutorial
+### Web Tutorial by moto\_maka
 
 [iPhoneアプリを作ってみよう：目次エントリー - もとまか日記](http://d.hatena.ne.jp/moto_maka/20081118/1226953067)
 
 - [Janken](./Janken)
+- [MyBrowser](./MyBrowser)
+
+### iOS tutorial by mixi-inc
+
+[mixi-inc/iOSTraining GitHub](https://github.com/mixi-inc/iOSTraining)
 
 ## Link
 

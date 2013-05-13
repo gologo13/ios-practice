@@ -23,7 +23,8 @@ typedef enum ResultTypes : NSUInteger {
 } ResultTypes;
 
 NSString *HandNames[3] = {@"Rock", @"Scissor", @"Paper"};
-NSString *ResultNames[3] = {@"You Win!", @"You Lose...", @"Even! Play again!"};
+//NSString *ResultNames[3] = {@"You Win!", @"You Lose...", @"Even! Play again!"};
+NSString *ResultNames[3] = {@"You Win!", @"yohei...", @"Even! Play again!"};
 
 static UIImage *rockImage;
 static UIImage *scissorImage;
