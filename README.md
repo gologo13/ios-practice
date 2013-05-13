@@ -31,7 +31,7 @@ ios-practice
 
 [iPhoneアプリを作ってみよう：目次エントリー - もとまか日記](http://d.hatena.ne.jp/moto_maka/20081118/1226953067)
 
-- [Janken](./Janken)
+- [Janken](./janken)
 - [MyBrowser](./MyBrowser)
 
 ### iOS tutorial by mixi-inc
