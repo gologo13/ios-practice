@@ -27,6 +27,8 @@
             [self.layer addSublayer:bt];
             //  次の位置を計算
             r = CGRectOffset(r, 0, r.size.height);
+            if (i == 0)
+                selectedLayer = bt;
         }
     }
     return self;
@@ -48,15 +50,10 @@
         //  Pallet自身や、見つからなかった場合は、以前のCALayerに設定。
         layer = lastLayer;
     }
-    if (selectedLayer == layer) {
-        //  変化が無いので以後の処理はしない。
+    if ((layer == nil) || (selectedLayer == layer)) {
         return;
     }
-    //  古い方の色パッチの透明度を戻し、新しい方の色パッチの透明度を0.5にする。透明度はopacityで指定する。
-    selectedLayer.opacity = 1.0;
-    selectedLayer = layer;
-    selectedLayer.opacity = 0.5;
-    //  アクション送信。
+    indicator.frame = CGRectInset(selectedLayer.frame, -3, -3);
     [self sendAction:PalletEvent_ValueChanged];
 }
 
@@ -108,4 +105,10 @@
     //  キャンセルされたので選択されたCALayerの透明度を元に戻す。
     selectedLayer.opacity = 1.0;    
 }
+
+- (void)setSelectedColor:(UIColor *)inColor
+{
+    selectedLayer.backgroundColor = inColor.CGColor;
+}
+
 @end

@@ -15,6 +15,7 @@
     TargetActionHandler*    handler;    //  アクションメソッド管理用。
 }
 - (void)setTarget:(id)target action:(SEL)action forEvent:(int)event;
+- (void)setSelectedColor:(UIColor*)inColor;
 
 //  現在触られている色パッチの色を返す。
 - (UIColor*)selectedColor;

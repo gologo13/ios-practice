@@ -21,8 +21,10 @@ ios-practice
 - 11th chapter. done on Apr. 14, 2013.
 - 12th chapter. done on Apr. 15, 2013.
 - 13th chapter. done on Apr. 15, 2013.
-
+- 14th chapter. done on May. 29, 2013.
+- 15th chapter. done on May. 29, 2013.
 - 16th chapter. done on Mar. 31, 2013.
+- 17th chapter. done on May. 30, 2013.
 
 - 19th chapter. done on Apr. 02, 2013.
 - 20th chapter. done on Apr. 03, 2013.
@@ -33,6 +35,7 @@ ios-practice
 
 - [Janken](./janken)
 - [MyBrowser](./MyBrowser)
+- [Timer](./Timer)
 
 ### iOS tutorial by mixi-inc
 
