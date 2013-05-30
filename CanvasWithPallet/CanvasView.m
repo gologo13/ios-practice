@@ -72,4 +72,22 @@
 {
 }
 
+- (UIImage*)image
+{
+    return canvas;
+}
+
+- (void)setImage:(UIImage *)image
+{
+    if (canvas == image)
+        return;
+    
+    UIGraphicsBeginImageContext(self.bounds.size);
+    UIRectFill(self.bounds);
+    [image drawAtPoint:CGPointZero];
+    canvas = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    [self setNeedsDisplay];
+}
+
 @end

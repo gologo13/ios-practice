@@ -15,4 +15,6 @@
 }
 @property UIColor *penColor;
 @property float    penWidth;
+- (UIImage*)image;
+- (void)setImage:(UIImage*)image;
 @end

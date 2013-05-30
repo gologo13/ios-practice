@@ -12,6 +12,23 @@
 
 @implementation StudyAppDelegate
 
+- (UIImage*)loadImage
+{
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    NSString *filePath = [documentsDirectory stringByAppendingPathComponent:@"canvasimage.png"];
+    return [UIImage imageWithContentsOfFile:filePath];
+}
+
+- (void)saveImage:(UIImage*)image
+{
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    NSString *filePath = [documentsDirectory stringByAppendingPathComponent:@"canvasimage.png"];
+    NSData *imageData = UIImagePNGRepresentation(image);
+    [imageData writeToFile:filePath atomically:YES];
+}
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
@@ -29,6 +46,7 @@
     Pallet *pallet = [[Pallet alloc] initWithFrame:r];
     [pallet setTarget:self action:@selector(palletActionValueChanged:) forEvent:PalletEvent_ValueChanged];
     [self.window addSubview:pallet];
+    canvasView.image = [self loadImage];
     
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
@@ -50,6 +68,7 @@
 {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    [self saveImage:canvasView.image];
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application
@@ -65,6 +84,7 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    [self saveImage:canvasView.image];
 }
 
 @end

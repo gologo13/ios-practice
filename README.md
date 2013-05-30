@@ -25,7 +25,7 @@ ios-practice
 - 15th chapter. done on May. 29, 2013.
 - 16th chapter. done on Mar. 31, 2013.
 - 17th chapter. done on May. 30, 2013.
-
+- 18th chapter. done on May. 31, 2013.
 - 19th chapter. done on Apr. 02, 2013.
 - 20th chapter. done on Apr. 03, 2013.
 
