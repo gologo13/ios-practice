@@ -1,30 +1,65 @@
 //
 //  AppDelegate.m
-//  Thumbnail
+//  Flipflop
 //
-//  Created by Yohei Yamaguchi on 2013/06/02.
+//  Created by Yohei Yamaguchi on 2013/06/10.
 //  Copyright (c) 2013年 Yohei Yamaguchi. All rights reserved.
 //
 
 #import "AppDelegate.h"
 
-#define NUM_THUMBNAILS 10
+#define NUM_THUMBNAILS 20
 
 @implementation AppDelegate
 
+#pragma mark - ()
+- (UIView*)createFlipViewWithColor:(UIColor*)color
+{
+    UIView *view = [[UIView alloc] initWithFrame:[UIScreen mainScreen].applicationFrame];
+    view.backgroundColor = color;
+    
+    UIButton *flipButton = [UIButton buttonWithType:UIButtonTypeInfoLight];
+    flipButton.frame = CGRectOffset(flipButton.frame, view.bounds.size.width / 2, view.bounds.size.height / 2);
+    [flipButton addTarget:self action:@selector(flip) forControlEvents:UIControlEventTouchUpInside];
+    [view addSubview:flipButton];
+    
+    return view;
+}
+
+- (void)flip
+{
+    NSLog(@"called");
+    UIView *fromView = self.frontView, *toView = self.backView;
+    if (self.backView.superview) {
+        fromView = self.backView;
+        toView   = self.frontView;
+    }
+    
+    [UIView transitionFromView:fromView
+                        toView:toView
+                      duration:1
+                       options:UIViewAnimationOptionTransitionFlipFromLeft
+                    completion:nil];
+}
+
+#pragma mark - UIApplicationDelegate
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
     
-    ThumbnailView *thumbnailView = [[ThumbnailView alloc] initWithFrame:[[UIScreen mainScreen] applicationFrame]];
-    [self.window addSubview:thumbnailView];
-    [thumbnailView setThumbnails:[self thumbs]];
-    thumbnailView.delegate = self;
+    self.frontView = [self createFlipViewWithColor: [UIColor redColor]];
+    self.backView = [[ThumbnailView alloc] initWithFrame: [UIScreen mainScreen].applicationFrame];
+    self.backView.delegate = self;
+    [self.backView setThumbnails:[self thumbs]];
+    
+    [self.window addSubview:self.frontView];
+    [self.window addSubview:self.backView];
     
     [self.window makeKeyAndVisible];
     return YES;
 }
+
 
 - (NSArray*)thumbs
 {
@@ -97,10 +132,9 @@
 }
 
 #pragma mark - ThumbnailViewDelegate
-
 - (void)thumbnailView:(ThumbnailView *)thumbnailView didSelectIndex:(int)index
 {
-    NSLog(@"touched %d", index);
+    [self flip];
 }
 
 @end
