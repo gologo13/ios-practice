@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>F2E3BB13-CBC0-4432-94BA-99AFE67A8909</string>
+	<key>IDESourceControlProjectName</key>
+	<string>CanvasWithPallet</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>0204FAF4-FE23-402E-9C36-9CB1044C5A2F</key>
+		<string>ssh://github.com/gologo13/ios-practice.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Book/CanvasWithPallet/CanvasWithPallet.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>0204FAF4-FE23-402E-9C36-9CB1044C5A2F</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/gologo13/ios-practice.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>0204FAF4-FE23-402E-9C36-9CB1044C5A2F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>0204FAF4-FE23-402E-9C36-9CB1044C5A2F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ios-practice</string>
+		</dict>
+	</array>
+</dict>
+</plist>
