@@ -33,6 +33,8 @@ ios-practice
 - 23rd chapter. done on Jun. 10, 2013.
 - 24th chapter. done on Jun. 12, 2013.
 - 25th chapter. done on Jun. 13, 2013.
+- 26th chapter.
+- 27th chapter. done on Jun. 18, 2013.
 
 ### Web Tutorial by moto\_maka
 

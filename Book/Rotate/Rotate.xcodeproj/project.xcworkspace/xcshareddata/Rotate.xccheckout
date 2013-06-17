@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>32914B68-D6C6-4BBF-86F7-136F4B489148</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Rotate</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>7D927A82-C78B-4DEF-BC35-C98C99F8C02C</key>
+		<string>ssh://github.com/gologo13/ios-practice.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Book/Rotate/Rotate.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>7D927A82-C78B-4DEF-BC35-C98C99F8C02C</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/gologo13/ios-practice.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>7D927A82-C78B-4DEF-BC35-C98C99F8C02C</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>7D927A82-C78B-4DEF-BC35-C98C99F8C02C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ios-practice</string>
+		</dict>
+	</array>
+</dict>
+</plist>
