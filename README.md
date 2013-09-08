@@ -40,13 +40,17 @@ ios-practice
 - 30th chapter. done on Jun. 30, 2013.
 - 31st chapter. done on Jun. 30, 2013.
 
+### Book: Textbook for iPhone/iPad Application Development
+
+<img align="right" src="http://ecx.images-amazon.com/images/I/51b4eb0%2BT5L._BO2,204,203,200_PIsitb-sticker-arrow-click,TopRight,35,-76_AA300_SH20_OU09_.jpg"></img>
+
 ### Web Tutorial by moto\_maka
 
 [iPhoneアプリを作ってみよう：目次エントリー - もとまか日記](http://d.hatena.ne.jp/moto_maka/20081118/1226953067)
 
-- [Janken](./janken)
-- [MyBrowser](./MyBrowser)
-- [Timer](./Timer)
+- [Janken](./Application/janken)
+- [MyBrowser](./Application/MyBrowser)
+- [Timer](./Application/Timer)
 
 ### iOS tutorial by mixi-inc
 
